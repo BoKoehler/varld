@@ -2,7 +2,8 @@
 
 .title {
   text-align: center;
-  font-size: 32px; /* adjust to your liking */
-  margin: 20px auto; /* adjust to your liking */
-  font-family: 'Syne', sans-serif; /* added font family */
+  font-size: 32px;
+  margin: 20px auto;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
 }
