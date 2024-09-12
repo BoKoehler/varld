@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+.title {
+  text-align: center;
+  font-size: 32px; /* adjust to your liking */
+  margin: 20px auto; /* adjust to your liking */
+  font-family: 'Syne', sans-serif; /* added font family */
+}
