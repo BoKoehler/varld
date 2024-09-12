@@ -4,6 +4,26 @@
   --text-color: #333;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #333;
+  border-radius: 10px;
+}
+
 body {
   font-family: "Syne", sans-serif;
   scroll-behavior: smooth;
@@ -22,11 +42,11 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   transition: opacity 0.5s ease-in-out;
 }
-
-
 
 .container {
   max-width: 1200px;
@@ -34,7 +54,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}/* Existing styles */
+}
 
 button {
   border-radius: 5px;
@@ -116,20 +136,6 @@ button:hover {
   margin-bottom: 40px;
 }
 
-.scroll-button {
-  background-color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #333;
-  box-shadow: 0 0 0 1px #333;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.scroll-button:hover {
-  background-color: #f7f7f7;
-}
 
 .clothing-item {
   margin: 20px;
@@ -137,9 +143,16 @@ button:hover {
   background-color: #fff;
   padding: 20px;
   display: flex;
+  margin: 20px;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .clothing-item {
+    width: 100%;
+  }
 }
 
 .clothing-item img {
@@ -150,6 +163,7 @@ button:hover {
   height: auto;
   object-fit: contain;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .item-info {
@@ -199,23 +213,4 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-
-.back-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #333;
-  box-shadow: 0 0 0 1px #333;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.back-button:hover {
-  background-color: #f7f7f7;
 }
