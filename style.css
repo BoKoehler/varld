@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 
+:root {
+  --text-color: #333;
+}
+
 body {
   font-family: "Syne", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -18,7 +23,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: opacity 0.5s ease-in-out;
 }
+
+
 
 .container {
   max-width: 1200px;
@@ -26,6 +34,101 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}/* Existing styles */
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.shop-button {
+  /* Add some basic styling to the button */
+  background-color: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 0 0 1px #333;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.shop-button:hover {
+  /* Add some animation on hover */
+  background-color: #444;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.shop-button:active {
+  /* Add some animation on click */
+  background-color: #555;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+.shop-button:focus {
+  /* Add some focus styling */
+  outline: none;
+  box-shadow: 0 0 0 2px #333;
+}
+
+/* New styles for Welcome section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.welcome-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.scroll-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 0 0 1px #333;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.scroll-button:hover {
+  background-color: #f7f7f7;
 }
 
 .clothing-item {
@@ -80,4 +183,39 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 0 0 1px #333;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #f7f7f7;
 }

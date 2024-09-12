@@ -3,25 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
+    <title>värld Shop</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <h1 class="title">värld</h1>
-    <section class="clothing-section">
-      <div class="container">
-        <div class="clothing-item">
-          <img src="Black_Tee_Front_1024x1024@2x.png" alt="Clothing Item 1" />
-          <div class="item-info">
-            <h2>black tee</h2>
-            <p>$99</p>
-            <button>Add to Cart</button>
+    <div class="page-container">
+      <header class="header">
+        <h1 class="title">värld</h1>
+      </header>
+      <section class="home-section">
+        <div class="home-container welcome-section">
+            <h2>welcome to värld</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel blandit tincidunt, nulla erat auctor nisl, sed tristique nisi nisl at nunc.</p>
+            <button class="shop-button">Visit the Shop</button>
           </div>
+      </section>
+      <section class="clothing-section" id="shop">
+        <div class="container">
+          <div class="clothing-item">
+            <img src="Black_Tee_Front_1024x1024@2x.png" alt="Clothing Item 1" />
+            <div class="item-info">
+              <h2>black tee</h2>
+              <p>$99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <!-- Add more clothing items here -->
         </div>
-        <!-- Add more clothing items here -->
-      </div>
-    </section>
+      </section>
+      <footer class="footer">
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
